@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4f1-Lt-53p">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="VehicleListViewController" id="BYZ-38-t0r" customClass="VehicleListViewController" customModule="FreeNowSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LFr-as-5He">
+                                <rect key="frame" x="0.0" y="20" width="375" height="557"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vehicleListTableViewCell" rowHeight="100" id="z6o-r7-lh6" customClass="VehicleListTableViewCell" customModule="FreeNowSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z6o-r7-lh6" id="yCb-9r-5cQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgU-x9-TgL">
+                                                    <rect key="frame" x="15" y="5" width="345" height="90"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="mUh-PZ-3C7">
+                                                            <rect key="frame" x="5" y="5" width="335" height="80"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="njZ-eJ-zCa">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="31.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pooling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cId-rQ-Uiq" customClass="RoundedCornerLabel" customModule="FreeNowSample" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="68.5" height="31.5"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="tintColor" red="0.25098039215686274" green="0.65098039215686276" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                                                            <color key="textColor" red="0.25098039220000001" green="0.65098039220000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                                                    <real key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                                                    <real key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                                                    <real key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                                                    <real key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </label>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrK-jy-oJb">
+                                                                            <rect key="frame" x="313" y="0.0" width="22" height="31.5"/>
+                                                                            <color key="tintColor" red="0.25098039215686274" green="0.65098039215686276" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="cId-rQ-Uiq" firstAttribute="top" secondItem="HrK-jy-oJb" secondAttribute="top" id="lV4-7a-S5e"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cfM-eT-p9N">
+                                                                    <rect key="frame" x="0.0" y="34" width="335" height="46"/>
+                                                                    <subviews>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" image="DriverIcon" translatesAutoresizingMaskIntoConstraints="NO" id="38F-Hd-r9A">
+                                                                            <rect key="frame" x="0.0" y="3" width="40" height="40"/>
+                                                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="40" id="SG3-cX-ypb"/>
+                                                                                <constraint firstAttribute="height" constant="40" id="pFy-wS-FQ9"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="20"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="equalCentering" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MJN-iQ-oFF">
+                                                                            <rect key="frame" x="100" y="0.0" width="126.5" height="46"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Deer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-CZ-vmS">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="126.5" height="18"/>
+                                                                                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="15"/>
+                                                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30.1 KM Away" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qv-Bh-hWU">
+                                                                                    <rect key="frame" x="0.0" y="22" width="126.5" height="24"/>
+                                                                                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4K-Mq-AaD">
+                                                                            <rect key="frame" x="277" y="6" width="58" height="34"/>
+                                                                            <color key="backgroundColor" red="0.95686274509803915" green="0.71764705882352942" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <state key="normal" title=" Select "/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.94110429286956787" green="0.94121712446212769" blue="0.94106596708297729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="mUh-PZ-3C7" secondAttribute="trailing" constant="5" id="4vJ-JN-dvi"/>
+                                                        <constraint firstItem="mUh-PZ-3C7" firstAttribute="top" secondItem="VgU-x9-TgL" secondAttribute="top" constant="5" id="91e-Vh-NgN"/>
+                                                        <constraint firstItem="mUh-PZ-3C7" firstAttribute="leading" secondItem="VgU-x9-TgL" secondAttribute="leading" constant="5" id="B26-Oi-KQH"/>
+                                                        <constraint firstAttribute="bottom" secondItem="mUh-PZ-3C7" secondAttribute="bottom" constant="5" id="JmD-xy-BfZ"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="VgU-x9-TgL" firstAttribute="leading" secondItem="z6o-r7-lh6" secondAttribute="leading" constant="15" id="1R3-JX-LXm"/>
+                                            <constraint firstItem="VgU-x9-TgL" firstAttribute="top" secondItem="z6o-r7-lh6" secondAttribute="top" constant="5" id="2Sb-tQ-xPT"/>
+                                            <constraint firstAttribute="bottom" secondItem="VgU-x9-TgL" secondAttribute="bottom" constant="5" id="ezm-fw-hpg"/>
+                                            <constraint firstAttribute="trailing" secondItem="VgU-x9-TgL" secondAttribute="trailing" constant="15" id="lIh-jd-fpM"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="vehicleDistanceLabel" destination="6Qv-Bh-hWU" id="pHq-XG-QS3"/>
+                                            <outlet property="vehicleDriverNameLabel" destination="hWM-CZ-vmS" id="Ij3-jG-YsV"/>
+                                            <outlet property="vehicleImageView" destination="38F-Hd-r9A" id="C0h-1A-nbv"/>
+                                            <outlet property="vehicleTypeLabel" destination="cId-rQ-Uiq" id="oYz-Rb-Woi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="FTo-j3-WrN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RFb-tI-gWq"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="do1-lq-euT">
+                                <rect key="frame" x="16" y="585" width="343" height="29"/>
+                                <segments>
+                                    <segment title="ALL"/>
+                                    <segment title="TAXIS"/>
+                                    <segment title="POOLS"/>
+                                </segments>
+                                <color key="tintColor" red="0.25098039220000001" green="0.65098039220000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="vehicleTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Uf6-9N-EDf"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LFr-as-5He" firstAttribute="bottom" secondItem="do1-lq-euT" secondAttribute="bottom" constant="-36" id="6cP-fP-ZFE"/>
+                            <constraint firstItem="do1-lq-euT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LV3-4l-AVL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="do1-lq-euT" secondAttribute="trailing" constant="16" id="WqE-9h-RCa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="do1-lq-euT" secondAttribute="bottom" constant="5" id="a7x-G6-Bbo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LFr-as-5He" secondAttribute="trailing" id="c2v-iO-98N"/>
+                            <constraint firstItem="LFr-as-5He" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="geY-vN-Srn"/>
+                            <constraint firstItem="LFr-as-5He" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hhK-VZ-eID"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="List" image="VehicleList" selectedImage="VehicleList" id="pfO-sj-Zjy"/>
+                    <connections>
+                        <outlet property="vehicleTableView" destination="LFr-as-5He" id="IKd-gm-Hwp"/>
+                        <outlet property="vehicleTypeSegment" destination="do1-lq-euT" id="VQ4-ir-Udz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.8" y="-208.24587706146929"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="mNI-Ip-iCL">
+            <objects>
+                <viewController storyboardIdentifier="VehicleMapViewController" id="7xv-af-aDO" customClass="VehicleMapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d3O-9e-OOT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Llu-jH-Br2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7xv-af-aDO" id="5zo-AB-aI8"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i0s-DG-d0O" firstAttribute="bottom" secondItem="Llu-jH-Br2" secondAttribute="bottom" id="LV9-W4-NhA"/>
+                            <constraint firstItem="Llu-jH-Br2" firstAttribute="leading" secondItem="i0s-DG-d0O" secondAttribute="leading" id="NUn-Iw-0gQ"/>
+                            <constraint firstItem="Llu-jH-Br2" firstAttribute="top" secondItem="i0s-DG-d0O" secondAttribute="top" id="ubg-ft-4h2"/>
+                            <constraint firstItem="i0s-DG-d0O" firstAttribute="trailing" secondItem="Llu-jH-Br2" secondAttribute="trailing" id="wq1-ll-vyY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i0s-DG-d0O"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="VehicleMap" selectedImage="VehicleMap" id="RqO-gG-E9m"/>
+                    <connections>
+                        <outlet property="mapView" destination="Llu-jH-Br2" id="Ufj-fw-6MZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g56-iS-Vz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.8" y="457.42128935532236"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oX5-G7-WKH">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4f1-Lt-53p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qfZ-gP-efc">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.65098039220000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="cI6-ee-hYy"/>
+                        <segue destination="7xv-af-aDO" kind="relationship" relationship="viewControllers" id="HjS-aR-YJO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlM-JJ-cgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DriverIcon" width="200" height="200"/>
+        <image name="VehicleList" width="25" height="25"/>
+        <image name="VehicleMap" width="25" height="25"/>
+    </resources>
+</document>

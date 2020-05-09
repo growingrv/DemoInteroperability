@@ -18,6 +18,7 @@ Following are other implementation details of the project:
 * Module 1 - vehicle list module is written in Swift and 
 * Module 2 - vehicle map module is written in Objective C and both are interoperable.
 * Have written some unit tests. 
+* The app supports both iPhone and iPad.
 
 ## Design details:
 * Have designed a highly scalable, maintanable and generic networking layer. 
@@ -37,3 +38,6 @@ Following are other implementation details of the project:
     * Clean architecture
     * DRY (Dont repeat yourself)
     * POLA (Principle of least astonishment)
+
+## Screenshots
+<img src = "Screens/1.png" width=314.4 height=556.8> <img src = "Screens/2.png" width=314.4 height=556.8> <img src = "Screens/3.png" width=314.4 height=556.8> <img src = "Screens/4.png" width=314.4 height=556.8> <img src = "Screens/5.png">

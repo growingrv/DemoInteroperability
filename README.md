@@ -29,15 +29,15 @@ Following are other implementation details of the project:
 * Have used structs and sub structs for storing constant values.
 * Have used all Swift advanced features like **Protocols, Extensions, Structs and Generics**. Although some Swift specific features could not ne used extensively in order to maintain Objective C compatibility.
 * Most of the basic classes (e.g. Utilities etc) are written in Swift so many @objc flags can be found to maintain the Objective C compatibility.
-* Use of **functional programming concepts** (use of declarative function filter, reduce, map etc)
-* Have used protocol oriented approach wherever possible. Have used protocols AlertShowable and Progressable
-* While writing this app, the focus was less on adding more and more features but was more on to write scalable and maintainable code
-* .git folder is also there so it can be used to overview progress and app evolution.
+* Use of **functional programming concepts** (use of declarative function filter, reduce, map etc).
+* Have used **protocol oriented approach** wherever possible. Have used protocols **AlertShowable** and **Progressable**.
+* While writing this app, the focus was less on adding more and more features but was more on to write **scalable and maintainable code**.
+* **.git folder** is there and can be used to overview progress and how the app has evolved.
 * Followed mainly 4 design principles:
-    * S.O.L.I.D
-    * Clean architecture
-    * DRY (Dont repeat yourself)
-    * POLA (Principle of least astonishment)
+    * **S.O.L.I.D**
+    * **Clean architecture**
+    * **DRY** (Dont repeat yourself)
+    * **POLA** (Principle of least astonishment)
 
 ## Screenshots
 <img src = "Screens/1.png" width=314.4 height=556.8> <img src = "Screens/2.png" width=314.4 height=556.8> <img src = "Screens/3.png" width=314.4 height=556.8> <img src = "Screens/4.png" width=314.4 height=556.8> <img src = "Screens/5.png">

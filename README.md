@@ -3,7 +3,7 @@ A sample app demonstrating Objective C and Swift interoperability. Written in MV
 
 ## Functional details:
 The app covers following functionality:
-* The app demostrates Objective C & Swift interoperability
+* The app demostrates Objective C & Swift interoperability. Hence half the app is written in Swift and another half is written in Objective C.
 * The app displays the vehicles in a scrollable list and in map.
 * The app displays list of vehicles in screen 1 and then shows vehicles in a map in screen 2.
 * The app downloads the list of vehicles from a web service.
